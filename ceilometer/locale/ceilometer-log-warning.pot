@@ -1,0 +1,135 @@
+# Translations template for ceilometer.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the ceilometer project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ceilometer 5.0.3.dev10\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-03-01 06:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ceilometer/coordination.py:187
+msgid ""
+"Cannot extract tasks because agent failed to join group properly. "
+"Rejoining group."
+msgstr ""
+
+#: ceilometer/notification.py:190
+msgid ""
+"Non-metric meters may be collected. It is highly advisable to disable "
+"these meters using ceilometer.conf or the pipeline.yaml"
+msgstr ""
+
+#: ceilometer/pipeline.py:588
+#, python-format
+msgid ""
+"metering data %(counter_name)s for %(resource_id)s @ %(timestamp)s has no"
+" volume (volume: None), the sample will be dropped"
+msgstr ""
+
+#: ceilometer/pipeline.py:601
+#, python-format
+msgid ""
+"metering data %(counter_name)s for %(resource_id)s @ %(timestamp)s has "
+"volume which is not a number (volume: %(counter_volume)s), the sample "
+"will be dropped"
+msgstr ""
+
+#: ceilometer/agent/manager.py:450
+#, python-format
+msgid "Skipping %(name)s, %(service_type)s service is not registered in keystone"
+msgstr ""
+
+#: ceilometer/agent/discovery/endpoint.py:42
+#, python-format
+msgid "No endpoints found for service %s"
+msgstr ""
+
+#: ceilometer/alarm/evaluator/threshold.py:106
+#, python-format
+msgid "Expecting %(expected)d datapoints but only get %(actual)d"
+msgstr ""
+
+#: ceilometer/api/app.py:81
+msgid ""
+"pecan_debug cannot be enabled, if workers is > 1, the value is overrided "
+"with False"
+msgstr ""
+
+#: ceilometer/api/controllers/v2/root.py:122
+msgid "Can't connect to keystone, assuming gnocchi is disabled and retry later"
+msgstr ""
+
+#: ceilometer/api/controllers/v2/root.py:126
+msgid ""
+"ceilometer-api started with gnocchi enabled. The resources/meters/samples"
+" URLs are disabled."
+msgstr ""
+
+#: ceilometer/api/controllers/v2/root.py:147
+msgid "Can't connect to keystone, assuming aodh is disabled and retry later."
+msgstr ""
+
+#: ceilometer/api/controllers/v2/root.py:150
+msgid ""
+"ceilometer-api started with aodh enabled. Alarms URLs will be redirected "
+"to aodh endpoint."
+msgstr ""
+
+#: ceilometer/cmd/eventlet/polling.py:51
+#, python-format
+msgid "Duplicated values: %s found in CLI options, auto de-duplidated"
+msgstr ""
+
+#: ceilometer/compute/pollsters/disk.py:133
+#: ceilometer/compute/pollsters/disk.py:711
+#: ceilometer/compute/pollsters/memory.py:51
+#: ceilometer/compute/pollsters/memory.py:94
+#: ceilometer/compute/pollsters/net.py:99
+#, python-format
+msgid ""
+"Instance %(instance_id)s was shut off while getting samples of "
+"%(pollster)s: %(exc)s"
+msgstr ""
+
+#: ceilometer/compute/pollsters/memory.py:56
+#: ceilometer/compute/pollsters/memory.py:99
+#, python-format
+msgid ""
+"Cannot inspect data of %(pollster)s for %(instance_id)s, non-fatal "
+"reason: %(exc)s"
+msgstr ""
+
+#: ceilometer/dispatcher/database.py:99
+#, python-format
+msgid "message signature invalid, discarding message: %r"
+msgstr ""
+
+#: ceilometer/hardware/pollsters/generic.py:66
+#, python-format
+msgid "Ignore unrecognized field %s"
+msgstr ""
+
+#: ceilometer/transformer/conversions.py:88
+#, python-format
+msgid "Dropping out of time order sample: %s"
+msgstr ""
+
+#: ceilometer/transformer/conversions.py:94
+msgid "Negative delta detected, dropping value"
+msgstr ""
+
+#: ceilometer/transformer/conversions.py:100
+#, python-format
+msgid "Dropping sample with no predecessor: %s"
+msgstr ""
+
