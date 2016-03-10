@@ -62,7 +62,7 @@ class mtg_sender(threading.Thread):
         LOG.debug(("password %s" % self.ccsapi_password))
         reponse = requests.get(host, auth=(self.ccsapi_user, self.ccsapi_password))
         if reponse.status_code != 200:
-            LOG.warn(_("Can not get space id"))
+            LOG.warn(("Can not get space id"))
             self.space_id_cache[tenant_id] = None
             return None
         else:
